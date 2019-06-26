@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-stock v-for="stock in stocks" :key="stock.id"></app-stock>
+    <app-stock v-for="stock in stocks" :key="stock.id" :stock="stock"></app-stock>
   </div>
 </template>
 
@@ -13,8 +13,8 @@
         stocks: [
           {id: 1, name: 'Mercedes', price: 200 },
           {id: 2, name: 'Sasol', price: 100 },
-          {id: 1, name: 'Coca Cola', price: 300 },
-          {id: 1, name: 'Simba', price: 50 }
+          {id: 3, name: 'Coca Cola', price: 300 },
+          {id: 4, name: 'Simba', price: 50 }
         ]
       }
     },
